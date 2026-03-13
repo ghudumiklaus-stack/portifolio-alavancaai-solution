@@ -72,16 +72,11 @@ const Solutions = () => {
       <section className="relative pt-40 pb-32 mb-12 overflow-hidden flex items-center justify-center min-h-[60vh]">
         {/* Animated Background */}
         <div className="absolute inset-0 z-0 pointer-events-none">
-          {/* AVISO: Substitua 'src' pelo nome exato do arquivo que você quer usar na pasta public */}
-          <video 
-            autoPlay 
-            loop 
-            muted 
-            playsInline
+          <img 
+            src="/images/background.gif" 
+            alt="" 
             className="w-full h-full object-cover"
-            src="/seu-video-arquivo.mp4" 
           />
-          {/* Overlay escuro e fosco para garantir leitura do texto e elegância */}
           <div className="absolute inset-0 bg-background/70 backdrop-blur-[4px]"></div>
         </div>
 
