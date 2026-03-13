@@ -4,7 +4,7 @@ import logo from "@/assets/logo-marca.png";
 const Header = () => {
   return (
     <header className="absolute top-0 left-0 right-0 z-20 bg-background/95 backdrop-blur-sm shadow-sm">
-      <div className="container mx-auto px-6 py-6">
+      <div className="container mx-auto px-6 py-3">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <img 

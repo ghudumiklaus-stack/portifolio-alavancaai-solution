@@ -3,7 +3,6 @@ import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
-import { SplineSceneSection } from "@/components/SplineSceneSection";
 
 const Solutions = () => {
   const navigate = useNavigate();
@@ -69,26 +68,34 @@ const Solutions = () => {
     <div className="min-h-screen bg-background font-poppins">
       <Header />
       
-      {/* Hero Header Section */}
-      <section className="pt-40 pb-16 bg-gradient-to-br from-primary/10 to-accent/5">
-        <div className="container mx-auto px-6">
+      {/* Hero Header Section com Fundo Animado */}
+      <section className="relative pt-40 pb-32 mb-12 overflow-hidden flex items-center justify-center min-h-[60vh]">
+        {/* Animated Background */}
+        <div className="absolute inset-0 z-0 pointer-events-none">
+          {/* AVISO: Substitua 'src' pelo nome exato do arquivo que você quer usar na pasta public */}
+          <video 
+            autoPlay 
+            loop 
+            muted 
+            playsInline
+            className="w-full h-full object-cover"
+            src="/seu-video-arquivo.mp4" 
+          />
+          {/* Overlay escuro e fosco para garantir leitura do texto e elegância */}
+          <div className="absolute inset-0 bg-background/70 backdrop-blur-[4px]"></div>
+        </div>
+
+        <div className="container relative z-10 mx-auto px-6 pointer-events-auto">
           <div className="text-center">
-            <h1 className="font-poppins font-bold text-4xl md:text-6xl text-primary mb-6 leading-tight">
+            <h1 className="font-poppins font-bold text-4xl md:text-6xl text-foreground mb-6 leading-tight drop-shadow-lg">
               Soluções Inteligentes para um Mercado Competitivo
             </h1>
-            <p className="font-poppins text-xl text-foreground/80 max-w-4xl mx-auto leading-relaxed">
+            <p className="font-poppins text-xl text-foreground/90 max-w-4xl mx-auto leading-relaxed drop-shadow-md">
               Oferecemos um portfólio completo de serviços de IA para impulsionar 
               sua empresa ao próximo nível. Transforme desafios em oportunidades 
               com nossa expertise em inteligência artificial.
             </p>
           </div>
-        </div>
-      </section>
-
-      {/* Interactive 3D Section */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-6">
-          <SplineSceneSection />
         </div>
       </section>
 
@@ -98,8 +105,8 @@ const Solutions = () => {
           <div className="container mx-auto px-6">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {solutions.map((solution, index) => (
-                <Card key={index} className="p-8 border-border/50 hover:shadow-xl transition-all hover:border-accent/30 hover:scale-105 duration-300">
-                  <div className="w-16 h-16 bg-accent/10 rounded-xl flex items-center justify-center mb-6">
+                <Card key={index} className="p-8 border-border/50 hover:shadow-xl hover:shadow-primary/5 transition-all hover:border-primary/40 hover:-translate-y-1 duration-300 bg-background/50 backdrop-blur-sm">
+                  <div className="w-16 h-16 bg-primary/10 rounded-sm flex items-center justify-center mb-6 border border-primary/20">
                     <span className="text-3xl">{solution.icon}</span>
                   </div>
                   <h3 className="font-poppins font-semibold text-2xl text-primary mb-4">
@@ -144,7 +151,7 @@ const Solutions = () => {
               <Button 
                 onClick={() => navigate('/contact')}
                 size="lg" 
-                className="font-poppins font-semibold text-lg px-8 py-6 bg-primary hover:bg-primary/90 text-primary-foreground rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                className="font-poppins font-medium text-lg px-8 py-6 bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-primary/20 transition-all duration-300 hover:-translate-y-0.5"
               >
                 Solicitar Consulta Gratuita
               </Button>

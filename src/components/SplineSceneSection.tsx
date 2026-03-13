@@ -4,7 +4,7 @@ import { SplineScene } from "@/components/ui/splite";
 import { Card } from "@/components/ui/card"
 import { Spotlight } from "@/components/ui/spotlight"
  
-export function SplineSceneSection() {
+export default function SplineSceneSection() {
   return (
     <Card className="w-full h-[500px] bg-gradient-to-br from-background/50 to-primary/5 relative overflow-hidden border-border/50">
       <Spotlight

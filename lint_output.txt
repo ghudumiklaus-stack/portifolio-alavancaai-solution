@@ -1,0 +1,33 @@
+
+C:\Users\cerqu\Documents\Projetos_IDE\Portifolio_two\portifolio-alavancaai-solution-two\src\components\ui\badge.tsx
+  36:17  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\cerqu\Documents\Projetos_IDE\Portifolio_two\portifolio-alavancaai-solution-two\src\components\ui\button.tsx
+  56:18  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\cerqu\Documents\Projetos_IDE\Portifolio_two\portifolio-alavancaai-solution-two\src\components\ui\command.tsx
+  24:11  error  An interface declaring no members is equivalent to its supertype  @typescript-eslint/no-empty-object-type
+
+C:\Users\cerqu\Documents\Projetos_IDE\Portifolio_two\portifolio-alavancaai-solution-two\src\components\ui\form.tsx
+  168:3  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\cerqu\Documents\Projetos_IDE\Portifolio_two\portifolio-alavancaai-solution-two\src\components\ui\navigation-menu.tsx
+  119:3  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\cerqu\Documents\Projetos_IDE\Portifolio_two\portifolio-alavancaai-solution-two\src\components\ui\sidebar.tsx
+  760:3  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\cerqu\Documents\Projetos_IDE\Portifolio_two\portifolio-alavancaai-solution-two\src\components\ui\sonner.tsx
+  29:19  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\cerqu\Documents\Projetos_IDE\Portifolio_two\portifolio-alavancaai-solution-two\src\components\ui\textarea.tsx
+  5:18  error  An interface declaring no members is equivalent to its supertype  @typescript-eslint/no-empty-object-type
+
+C:\Users\cerqu\Documents\Projetos_IDE\Portifolio_two\portifolio-alavancaai-solution-two\src\components\ui\toggle.tsx
+  43:18  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\cerqu\Documents\Projetos_IDE\Portifolio_two\portifolio-alavancaai-solution-two\src\pages\Portfolio.tsx
+  21:6  warning  React Hook useEffect has a missing dependency: 'fetchVideos'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+Ô£û 10 problems (2 errors, 8 warnings)
+

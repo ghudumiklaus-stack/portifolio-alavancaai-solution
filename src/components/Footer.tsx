@@ -2,7 +2,7 @@ import logo from "@/assets/logo-marca.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-primary-foreground py-16">
+    <footer className="bg-card text-card-foreground py-16 border-t border-border">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Logo and Description */}

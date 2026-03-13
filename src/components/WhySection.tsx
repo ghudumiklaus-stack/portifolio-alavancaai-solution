@@ -20,7 +20,7 @@ const WhySection = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section className="pt-10 pb-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-poppins font-bold text-4xl md:text-5xl text-primary mb-6">
