@@ -42,10 +42,10 @@ const ServicesSection = () => {
               <span className="font-mono text-xs tracking-widest uppercase">System Capabilities</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tight text-foreground drop-shadow-sm">
-              Operational <span className="text-muted-foreground">Modules</span>
+              Operational <span className="text-foreground">Modules</span>
             </h2>
           </div>
-          <p className="text-muted-foreground max-w-md text-right md:text-left font-mono text-sm leading-relaxed">
+          <p className="text-foreground/90 max-w-md text-right md:text-left font-mono text-sm leading-relaxed">
             // ARQUITETURA DE ESCALA <br />
             Implementamos infraestrutura autônoma para empresas que não podem parar.
           </p>
