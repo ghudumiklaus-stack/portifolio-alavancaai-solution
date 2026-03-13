@@ -226,7 +226,7 @@ const Portfolio = () => {
     event.stopPropagation(); // Prevent opening video modal
     
     try {
-      const { error } = await supabase
+      const { error } = await (supabase as any)
         .from('videos')
         .delete()
         .eq('id', videoId);

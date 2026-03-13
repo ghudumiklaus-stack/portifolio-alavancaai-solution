@@ -49,7 +49,7 @@ const VideoShowcaseSection = () => {
     if (!showcaseVideo) return;
     
     try {
-      const { error } = await supabase
+      const { error } = await (supabase as any)
         .from('videos')
         .delete()
         .eq('id', showcaseVideo.id);
