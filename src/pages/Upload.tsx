@@ -107,7 +107,7 @@ const Upload = () => {
 
       // Save to database
       console.log('Saving video to database with thumbnail URL:', thumbnailUrl);
-      const { error: dbError } = await supabase
+      const { error: dbError } = await (supabase as any)
         .from('videos')
         .insert({
           title,

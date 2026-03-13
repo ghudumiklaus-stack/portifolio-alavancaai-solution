@@ -18,7 +18,7 @@ const VideoShowcaseSection = () => {
 
   const fetchShowcaseVideo = async () => {
     try {
-      const { data, error } = await supabase
+      const { data, error } = await (supabase as any)
         .from('videos')
         .select('*')
         .eq('category', 'showcase')
@@ -49,7 +49,7 @@ const VideoShowcaseSection = () => {
     if (!showcaseVideo) return;
     
     try {
-      const { error } = await supabase
+      const { error } = await (supabase as any)
         .from('videos')
         .delete()
         .eq('id', showcaseVideo.id);
