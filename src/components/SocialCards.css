@@ -9,7 +9,7 @@
   overflow: hidden;
   height: 50px;
   width: 220px;
-  border-radius: 2px;
+  border-radius: 8px;
   border: 1px solid rgba(255,255,255,0.1);
 }
 
@@ -23,15 +23,18 @@
   height: 100%;
   transition: 0.25s linear;
   z-index: 1;
-  background-color: #E87C3E;
 }
 
 .social-card-container .card::before {
   left: 0;
+  background-color: #E87C3E;
+  border-radius: 8px 0 0 8px;
 }
 
 .social-card-container .card::after {
   right: 0;
+  background-color: #22c55e;
+  border-radius: 0 8px 8px 0;
 }
 
 .social-card-container .card:hover span {
@@ -63,8 +66,7 @@
   opacity: 1;
   transition: opacity 0.25s;
   z-index: 2;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
 }
 
 .social-card-container .card .social-link {
