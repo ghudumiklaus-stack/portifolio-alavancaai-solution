@@ -1,4 +1,5 @@
 import logo from "@/assets/logo-marca.png";
+import SocialCards from "@/components/SocialCards";
 
 const Footer = () => {
   return (
