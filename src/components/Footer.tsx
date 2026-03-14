@@ -1,4 +1,5 @@
 import logo from "@/assets/logo-marca.png";
+import SocialCards from "@/components/SocialCards";
 
 const Footer = () => {
   return (
@@ -18,6 +19,7 @@ const Footer = () => {
               Transformando negócios através da inteligência artificial. 
               Soluções sofisticadas e personalizadas para impulsionar seu crescimento.
             </p>
+            <SocialCards />
           </div>
           
           {/* Solutions */}

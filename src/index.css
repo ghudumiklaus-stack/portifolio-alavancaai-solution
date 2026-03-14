@@ -60,3 +60,14 @@ a[href*="lovable.dev"], iframe[src*="lovable.dev"], div[style*="Edit with Lovabl
   position: absolute !important;
   z-index: -9999 !important;
 }
+
+@keyframes bounce-icon {
+  40% { transform: scale(1.4); }
+  60% { transform: scale(0.8); }
+  80% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.group:hover .group-hover\:animate-bounce-icon {
+  animation: bounce-icon 0.4s linear;
+}

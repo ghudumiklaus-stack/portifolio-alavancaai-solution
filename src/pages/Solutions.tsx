@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
-import SplineBackground from "@/components/SplineBackground";
+
 
 const Solutions = () => {
   const navigate = useNavigate();
@@ -69,21 +69,30 @@ const Solutions = () => {
     <div className="min-h-screen bg-background font-poppins">
       <Header />
       
-      {/* Hero Header Section com Fundo Spline 3D */}
-      <section className="relative flex items-center justify-center min-h-[70vh] h-[70vh] overflow-hidden">
-        {/* Spline 3D Background — NO pointer-events-none so mouse events reach the canvas */}
-        <div className="absolute inset-0 z-0" style={{ width: "100%", height: "100%" }}>
-          <SplineBackground />
-        </div>
+      {/* Hero Header Section com GIF Background */}
+      <section className="relative flex items-center justify-center min-h-[75vh] h-[75vh] overflow-hidden">
+        {/* GIF Background */}
+        <img
+          src="/images/background-2.gif"
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 w-full h-full object-cover z-0"
+        />
+        {/* Leve overlay para legibilidade */}
+        <div className="absolute inset-0 z-[1] bg-background/10" />
 
-        {/* Text layer: pointer-events-none on wrapper so mouse passes THROUGH to Spline */}
-        {/* pointer-events-auto only on the actual text elements so they remain selectable */}
-        <div className="container relative z-10 mx-auto px-6 pointer-events-none">
+        <div className="container relative z-10 mx-auto px-6">
           <div className="text-center">
-            <h1 className="font-poppins font-bold text-4xl md:text-6xl text-foreground mb-6 leading-tight drop-shadow-lg pointer-events-auto">
+            <h1
+              className="font-poppins font-bold text-4xl md:text-6xl text-foreground mb-6 leading-tight"
+              style={{ textShadow: '0 2px 12px rgba(0,0,0,0.8), 0 0 40px rgba(0,0,0,0.5)' }}
+            >
               Soluções Inteligentes para um Mercado Competitivo
             </h1>
-            <p className="font-poppins text-xl text-foreground/90 max-w-4xl mx-auto leading-relaxed drop-shadow-md pointer-events-auto">
+            <p
+              className="font-poppins text-xl text-foreground/90 max-w-4xl mx-auto leading-relaxed"
+              style={{ textShadow: '0 2px 8px rgba(0,0,0,0.7)' }}
+            >
               Oferecemos um portfólio completo de serviços de IA para impulsionar 
               sua empresa ao próximo nível. Transforme desafios em oportunidades 
               com nossa expertise em inteligência artificial.
