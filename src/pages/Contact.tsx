@@ -169,7 +169,9 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-poppins font-semibold text-primary">WhatsApp</h3>
-                      <p className="font-poppins text-foreground/80">+55 (11) 99999-9999</p>
+                      <p className="font-poppins text-foreground/80">
+                        <a href="https://wa.me/5511997529072" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">(11) 99752-9072</a>
+                      </p>
                     </div>
                   </div>
                   
