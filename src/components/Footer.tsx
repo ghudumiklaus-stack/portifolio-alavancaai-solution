@@ -20,7 +20,6 @@ const Footer = () => {
               Soluções sofisticadas e personalizadas para impulsionar seu crescimento.
             </p>
             <SocialCards />
-            </p>
           </div>
           
           {/* Solutions */}
