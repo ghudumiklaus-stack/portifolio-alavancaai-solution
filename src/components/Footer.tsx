@@ -19,6 +19,8 @@ const Footer = () => {
               Transformando negócios através da inteligência artificial. 
               Soluções sofisticadas e personalizadas para impulsionar seu crescimento.
             </p>
+            <SocialCards />
+            </p>
           </div>
           
           {/* Solutions */}
