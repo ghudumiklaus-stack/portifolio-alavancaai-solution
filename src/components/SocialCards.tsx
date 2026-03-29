@@ -7,7 +7,7 @@ export default function SocialCards() {
       <div className="card">
         <span>Redes</span>
         <a
-          href="https://www.instagram.com/alavancaia"
+          href="https://www.instagram.com/alavancaai.online/"
           target="_blank"
           rel="noopener noreferrer"
           className="social-link"
