@@ -1,73 +1,84 @@
-# Welcome to your Lovable project
+# 🚀 Portfólio Alavanca AI Solution
 
-## Project info
+Bem-vindo ao repositório do **Portfólio Alavanca AI**! Esta é uma aplicação moderna e de alta performance desenvolvida para demonstrar as capacidades de automação e inteligência artificial da Alavanca AI, focada especialmente no setor imobiliário e gestão estratégica de clientes.
 
-**URL**: https://lovable.dev/projects/cefc9a3c-b298-4930-b30d-0bcd02575d7d
+> [!TIP]
+> Esta aplicação foi construída com foco em **experiência do usuário (UX)** e **escalabilidade**, utilizando as tecnologias mais modernas do mercado.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🛠️ Tecnologias Utilizadas
 
-**Use Lovable**
+O projeto foi desenvolvido com uma stack robusta e performática:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/cefc9a3c-b298-4930-b30d-0bcd02575d7d) and start prompting.
+-   **Frontend**: [React](https://reactjs.org/) + [Vite](https://vitejs.dev/)
+-   **Linguagem**: [TypeScript](https://www.typescriptlang.org/)
+-   **Estilização**: [Tailwind CSS](https://tailwindcss.com/)
+-   **Componentização**: [Shadcn/UI](https://ui.shadcn.com/)
+-   **Banco de Dados & Auth**: [Supabase](https://supabase.com/)
+-   **Animações**: [Framer Motion](https://www.framer.com/motion/)
+-   **Gerenciamento de Estado**: [TanStack Query](https://tanstack.com/query/latest)
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## ⚡ Como Rodar Localmente
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Para rodar este projeto no seu computador, você precisará ter o [Node.js](https://nodejs.org/) (recomendado v18+) ou o [Bun](https://bun.sh/) instalado.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1.  **Clone o repositório**:
+    ```bash
+    git clone https://github.com/ghudumiklaus-stack/portifolio-alavancaai-solution.git
+    cd portifolio-alavancaai-solution
+    ```
 
-Follow these steps:
+2.  **Instale as dependências**:
+    ```bash
+    npm install
+    # ou
+    bun install
+    ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+3.  **Configuração das Variáveis de Ambiente**:
+    Crie um arquivo `.env` na raiz do projeto com as chaves do seu Supabase:
+    ```env
+    VITE_SUPABASE_URL=seu_url_do_supabase
+    VITE_SUPABASE_ANON_KEY=sua_chave_anon_key
+    ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+4.  **Inicie o servidor de desenvolvimento**:
+    ```bash
+    npm run dev
+    ```
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## ☁️ Deploy no Easypanel (VPS)
 
-**Edit a file directly in GitHub**
+Este projeto foi otimizado para deploy em VPS utilizando o **Easypanel**.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Passos para o Deploy:
+1.  **Crie um novo serviço**: No painel do Easypanel, crie um novo serviço do tipo "App".
+2.  **Conecte ao GitHub**: Selecione este repositório.
+3.  **Configuração de Build**:
+    *   **Build Method**: Nixpacks ou Dockerfile (recomendado: Nixpacks).
+    *   **Environment Variables**: Não esqueça de adicionar as chaves `VITE_SUPABASE_URL` e `VITE_SUPABASE_ANON_KEY` no dashboard do Easypanel.
+4.  **Domínio**: Adicione o seu domínio customizado e o Easypanel cuidará do SSL automaticamente.
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🛡️ Segurança e Boas Práticas
 
-## What technologies are used for this project?
+O repositório já conta com um `.gitignore` rigoroso que protege:
+-   Segredos locais (`.env`)
+-   Ferramentas locais de IA (`.agent/`, `.gemini/`)
+-   Dependências e arquivos de build.
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📄 Licença
 
-## How can I deploy this project?
+Este projeto é de uso exclusivo da **Alavanca AI**. Para mais informações, entre em contato em `ghudumiklaus@gmail.com`.
 
-Simply open [Lovable](https://lovable.dev/projects/cefc9a3c-b298-4930-b30d-0bcd02575d7d) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Desenvolvido com ❤️ por [ghudumiklaus-stack](https://github.com/ghudumiklaus-stack)
