@@ -6,19 +6,48 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+lint_output.txt
 
-node_modules
-dist
-dist-ssr
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Build outputs
+dist/
+dist-ssr/
+build/
+.next/
+out/
+
+# Antigravity & AI Tools
+.agent/
+.gemini/
+.aider*
+.cursor/
+
+# Environment / Secrets
+.env
+.env.*
+!.env.example
 *.local
+supabase/.temp/
+supabase/functions/.env
+supabase/storage/
 
-# Editor directories and files
+# Editor / IDE
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+*.patch
+*.diff
+
+# Bun / Modern JS
+bun.lockb
+.vercel
+.turbo
