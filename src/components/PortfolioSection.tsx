@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useNavigate } from "react-router-dom";
-import dashboardImage from "@/assets/dashboard-analytics.png";
+import dashboardImage from "@/assets/painel-dashboard.png";
 import aiSalesImage from "@/assets/ai-sales-assistant.jpg";
 import aiTrafficImage from "@/assets/ai-traffic-management.jpg";
 
