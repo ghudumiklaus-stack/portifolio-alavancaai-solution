@@ -69,30 +69,14 @@ const Solutions = () => {
     <div className="min-h-screen bg-background font-poppins">
       <Header />
       
-      {/* Hero Header Section com GIF Background */}
-      <section className="relative flex items-center justify-center min-h-[75vh] h-[75vh] overflow-hidden">
-        {/* GIF Background */}
-        <img
-          src="/images/background-2.gif"
-          alt=""
-          aria-hidden="true"
-          className="absolute inset-0 w-full h-full object-cover z-0"
-        />
-        {/* Leve overlay para legibilidade */}
-        <div className="absolute inset-0 z-[1] bg-background/10" />
-
-        <div className="container relative z-10 mx-auto px-6">
+      {/* Hero Header Section */}
+      <section className="pt-32 pb-16 bg-background">
+        <div className="container mx-auto px-6">
           <div className="text-center">
-            <h1
-              className="font-poppins font-bold text-4xl md:text-6xl text-foreground mb-6 leading-tight"
-              style={{ textShadow: '0 2px 12px rgba(0,0,0,0.8), 0 0 40px rgba(0,0,0,0.5)' }}
-            >
+            <h1 className="font-poppins font-bold text-4xl md:text-6xl text-primary mb-6 leading-tight">
               Soluções Inteligentes para um Mercado Competitivo
             </h1>
-            <p
-              className="font-poppins text-xl text-foreground/90 max-w-4xl mx-auto leading-relaxed"
-              style={{ textShadow: '0 2px 8px rgba(0,0,0,0.7)' }}
-            >
+            <p className="font-poppins text-xl text-foreground/80 max-w-4xl mx-auto leading-relaxed">
               Oferecemos um portfólio completo de serviços de IA para impulsionar 
               sua empresa ao próximo nível. Transforme desafios em oportunidades 
               com nossa expertise em inteligência artificial.
